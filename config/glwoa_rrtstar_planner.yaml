@@ -1,0 +1,21 @@
+
+GlWoaRrtStarPlanner:
+  # General Parameters
+  use_optimizer: true
+  number_of_tests: 1
+  visualize_tree: true
+  goal_tolerance: 0.2
+  # RRT* Parameters
+  rewiring_radius: 1.2
+  epsilon: 0.15
+  max_num_nodes: 10000
+  # WOA Parameters
+  sampling_radius: 0.1
+  num_iterations: 400
+  num_agents: 60
+  spiral_shape: 0.8
+
+# Goal to send to the planner
+SendGoal:
+  goal_x: -0.5
+  goal_y: 4.8

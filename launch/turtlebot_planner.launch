@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- spawn turtlebot -->
+  <include file="$(find glwoa_rrtstar_planner)/launch/turtlebot_spawn.launch" />
+
+  <!-- launch amcl -->
+  <include file="$(find glwoa_rrtstar_planner)/launch/turtlebot_amcl.launch" />
+
+  <!-- launch move base -->
+  <include file="$(find glwoa_rrtstar_planner)/launch/turtlebot_move_base.launch" />
+
+ <!-- rviz launch -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find glwoa_rrtstar_planner)/config/glwoa_rrt_star.rviz" />
+
+</launch>

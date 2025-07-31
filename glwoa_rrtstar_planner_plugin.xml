@@ -1,0 +1,7 @@
+<library path="lib/libglwoa_rrtstar_planner">
+  <class name="glwoa_rrtstar_planner/GlWoaRrtStarPlanner" type="glwoa_rrtstar_planner::GlWoaRrtStarPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+    <description> RRT* initially implemented by Rafael Barreto,
+                  WOA implemented and added by Ilyes Chaabeni.
+    </description>
+  </class>
+</library>

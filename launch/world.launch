@@ -1,0 +1,16 @@
+<launch>
+
+  <!-- Set Gazebo model path to include our custom models -->
+  <env name="GAZEBO_MODEL_PATH" value="$(find glwoa_rrtstar_planner)/gazebo/models:$(optenv GAZEBO_MODEL_PATH)" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find glwoa_rrtstar_planner)/gazebo/worlds/env1.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="recording" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+</launch>

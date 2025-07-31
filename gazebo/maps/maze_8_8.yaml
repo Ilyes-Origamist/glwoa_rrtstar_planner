@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: maze_8_8.pgm
+negate: 0
+occupied_thresh: 0.65
+origin:
+- -0.5999999999999943
+- -4.3999999999999915
+- 0.0
+resolution: 0.05
