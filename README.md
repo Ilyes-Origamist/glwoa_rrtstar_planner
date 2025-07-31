@@ -30,18 +30,22 @@ This implementation could be easily modified to change the optimizer, implement 
 ## 1. Installation and Usage
 ### 1.1. Requirements and Installation
 ROS Noetic on Ubuntu 20.04 installed, with C++ 17.<br>
-Dependencies include ROS navigation stack, AMCL, dynamic reconfigure, etc. You can install them using `rosdep` or `apt`.
+Dependencies include ROS navigation stack, AMCL, dynamic reconfigure, etc, and armadillo for C++. You can install them using `rosdep` or `apt`.
 
 Clone the repository inside your ROS workspace:
 ```bash
 cd ~/ros_ws/src
-git clone https://github.com/ilyesorigamist/glwoa_rrtstar_planner.git
+git clone https://github.com/Ilyes-Origamist/glwoa_rrtstar_planner.git
 ```
-Install dependencies:
+Install ROS dependencies:
 ```bash
 sudo rosdep init
 rosdep update && cd ros_ws/src/glwoa_rrtstar_planner
 rosdep install --from-paths src --ignore-src -r -y
+```
+Install C++ libraries (`armadillo`):
+```bash
+sudo apt-get install libarmadillo-dev
 ```
 Compile the package:
 ```bash
